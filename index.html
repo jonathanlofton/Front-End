@@ -63,6 +63,35 @@
 
 
   </body>
+  <section>
+    <form action="/reviews" method="post">
+      <label for="name">Name</label>
+      <input id="name" type="text" name="name">
+
+      <label for="/rating" method="post">Rating</label>
+      <input type="radio" name="rating" value="1" checked=true>1
+      <input type="radio" name="rating" value="2">2
+      <input type="radio" name="rating" value="3">3
+      <input type="radio" name="rating" value="4">4
+      <input type="radio" name="rating" value="5">5
+
+      <label for="cooking_expertise">Cooking Expertise</label>
+      <select id="cooking_expertise" name="cooking_expertise">
+        <option value="select_cooking_expertise" disabled="true" selected="true">Select Cooking Expertise</option>
+        <option value="sometimes_cook">Sometimes Cook</option>
+        <option value="cook_everyday">Cook Everyday</option>
+        <option value="cooking_is_a_hobby">Cooking is a Hobby</option>
+        <option value="proffesional_chef">Professional Chef</option>
+      </select>
+
+      <label for="review">
+        <textarea name="review" rows="6" cols="80"></textarea>
+      </label>
+
+      <input type="submit" value="Submit Review">
+    </form>
+  </section>
+
   <footer>
     <p>
       I eat peanut butter jelly sandwhiches everyday - help me.
