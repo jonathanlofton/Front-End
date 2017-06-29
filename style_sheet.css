@@ -1,0 +1,29 @@
+
+h1  {
+  font-size: 38px;
+}
+
+h2 {
+  font-size: 32px;
+  color: #ffbe57;
+}
+
+.ingredients-list {
+  list-style: square inside;
+}
+
+ul {
+  list-style: upper-roman inside;
+}
+
+.aa_photo {
+  width: 100px;
+}
+
+#pbj_photo {
+  width: 500px;
+}
+
+body {
+  background-color: #90aec6;
+}
