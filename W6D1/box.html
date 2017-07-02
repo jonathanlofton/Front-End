@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>BOX MODEL</title>
+    <style media="screen">
+
+      body {
+        background: orange;
+      }
+
+      .box {
+        display: inline-block;
+        background: lightblue;
+        text-align: center;
+
+        /* its ok to set width
+         but generally height
+         is something you don't
+         want to set */
+        width: 200px;
+
+        /* adds 20px to the width and
+        height to the designated width and ehight*/
+        padding: 20px;
+
+        /* */
+        border: 10px solid black;
+
+        /* keeps other objects around
+        the object a certain distance away,
+        this will add the distance to each
+        thing on a page */
+        margin: 100px;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <div class="box">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</div>
+
+    <div class="box">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</div>
+
+
+
+  </body>
+</html>

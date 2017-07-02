@@ -1,20 +1,6 @@
 <!DOCTYPE html>
 <html>
 
-  <header>
-
-    <a href="https://www.appacademy.io/">
-      <img class="aa_photo" src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/2005/s200/logo-emblem-red-1000-1-.jpg">
-    </a>
-
-    <nav>
-        <a href="#description">Description</a>
-        <a href="#ingredients">Ingredients</a>
-        <a href="#directions">Directions</a>
-    </nav>
-
-  </header>
-
   <head>
     <meta charset="utf-8">
 
@@ -33,13 +19,27 @@
       ga('send', 'pageview');
 
     </script>
-    <link rel="stylesheet" href="css_reset.css" type="text/css" />
+    <!-- <link rel="stylesheet" href="css_reset.css" type="text/css" /> -->
     <link rel="stylesheet" href="style_sheet.css" type="text/css" />
 
     <script src="javascript.js" type="text/javascript"></script>
   </head>
 
   <body>
+
+    <header>
+      <a href="https://www.appacademy.io/">
+        <img class="aa_photo" src="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/2005/s200/logo-emblem-red-1000-1-.jpg">
+      </a>
+      <nav>
+        <ul>
+          <li><a href="#description">Description</a></li>
+          <li><a href="#ingredients">Ingredients</a></li>
+          <li><a href="#directions">Directions</a></li>
+        </ul>
+      </nav>
+    </header>
+
     <h2>Peanut Butter Jelly Recipe</h2>
 
     <aside>
@@ -63,7 +63,7 @@
       </p>
 
       <figure>
-        <img id="pbj_photo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Peanut-Butter-Jelly-Sandwich.png/1200px-Peanut-Butter-Jelly-Sandwich.png" />
+        <img id="pbj_photo" src="http://media.npr.org/assets/img/2017/03/23/gettyimages-110960130-3--2-7eb939f6ee63bc3711c5a59c79847c53a40f5556-s900-c85.jpg" />
       </figure>
         <figcaption>
           If you would like to know about the rich history of this iconic
@@ -83,7 +83,7 @@
 
   </body>
   <section id="reviews">
-    <form action="/reviews" method="post" id="review-form">
+    <form action="/review" method="post" id="review-form">
       <label for="name">Name</label>
       <input id="name" type="text" name="name">
 
@@ -94,7 +94,6 @@
       <input type="radio" name="rating" value="4">4
       <input type="radio" name="rating" value="5">5
 
-      <label for="cooking_expertise">Cooking Expertise</label>
       <select id="cooking_expertise" name="cooking_expertise">
         <option value="select_cooking_expertise" disabled="true" selected="true">Select Cooking Expertise</option>
         <option value="sometimes_cook">Sometimes Cook</option>
